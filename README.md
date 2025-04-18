@@ -6,7 +6,7 @@ The four notebooks provided all contribute to the results in "Capstone URF Poste
 ## rubies_emcee_fitting.ipynb
 The first notebook reads in the RUBIES catalog of H-alpha detected galaxies and runs them through an MCMC Gaussian fitting pipeline called emcee. emcee allows walkers to explore a parameter space, and the median parameter are used as Gaussian parameters. These parameters are used to integrate the area under the curve, which serve as the integrated fluxes. These are converted into luminosities, and luminosity functions (LFs) are created by plotting the number density of objects per unit volume at different luminosity values (for varying redshifts.) These LFs are corrected in the remaining notebooks.
 
-## pandeia_ld_correctiion.ipynb
+## pandeia_ld_correction.ipynb
 The second notebook simulates galactic spectra using the JWST ETC Pandeia engine, establishing instrumental specifications and iterating across all luminosity and redshift values. These simulations can then be run through as many noise iterations as needed. The animation in "Pandeia Simulation Animation.mp4" comes from this notebook, displaying a single noise iteration on all luminosity bins within one redshift bin. The line detection completeness corrections account for the noise preventing our emcee pipeline in the previous notebook from fitting every H-alpha to a Gaussian properly (with SNR>5).
 
 ## obs_correction.ipynb
